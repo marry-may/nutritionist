@@ -40,37 +40,6 @@ p{
 		transform: translateY(-2px);
 	}
 }
-//========= CARD ==========
-.card{
-	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	margin-bottom: 2rem;
-	cursor: pointer;
-
-	transition: all .5s;
-
-	&-icon{
-		width: 5rem;
-		margin-bottom: .5rem;
-	}
-
-	&-description{
-		color: $color-text;
-	}
-
-	&:hover{
-		box-shadow: 0 .5rem 2rem rgb(0 0 0 / 10%);
-		transform: translateY(-.5rem);
-		border-color: rgba($color-text, .1);
-	}
-
-	@include media-breakpoint-down(sm) {
-		max-width: 300px;
-		margin: 1rem auto;
-	}
-}
 
 //========== FORM =========
 .form{
@@ -222,3 +191,5 @@ p{
 		max-width: 96%;
 	}
 }
+
+

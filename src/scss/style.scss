@@ -14,10 +14,16 @@
 @import 'config/common';
 
 
-// Components
+// Main Components
 @import 'layout/header';
 @import 'layout/footer';
 
-
 // Pages
 @import 'layout/home';
+
+// Elements
+@import 'layout/cards';
+
+
+// Aniamtion
+@import 'layout/animation';

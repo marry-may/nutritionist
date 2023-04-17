@@ -55,13 +55,49 @@ isWebp()
 // =======================================================================================================
 
 /* Открытие/закрытие модальных окон ======================================================================
-* Чтобы модальное окно открывалось и закрывалось
-* На окно повешай атрибут data-popup="<название окна>"
-* И на кнопку, которая вызывает окно так же повешай атрибут data-type="<название окна>"
-
-* На обертку(враппер) окна добавь класс _overlay-bg
-* На кнопку для закрытия окна добавь класс button-close
+* Add on modal data-popup="" (modal)
+* Add on trigger modal button data-type="" (modal)
+* Add on modal wrapper "._overlay-bg"
+* Add on close modal button class ".button-close"
 */
-/* Раскомментировать для использования */
+/* Modal */
 // togglePopupWindows()
 // =======================================================================================================
+
+
+// Trigger a CSS animation on scroll
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     const square = entry.target.querySelector('.animate-onscroll');
+
+//     if (entry.isIntersecting) {
+//       square.classList.add('onscroll-animation');
+// 	  //return; // if we added the class, exit the function
+//     }
+
+//     // We're not intersecting, so remove the class!
+//     square.classList.remove('onscroll-animation');
+//   });
+// });
+
+// observer.observe(document.querySelector('.card-icon'));
+
+
+// Trigger a CSS animation on scroll
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("onscroll-animation");
+    } else {
+      reveals[i].classList.remove("onscroll-animation");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
