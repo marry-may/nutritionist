@@ -3,7 +3,7 @@ import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)
 const srcFolder = 'src'
-const builFolder = 'dist'
+const builFolder = 'docs'
 
 const path = {
   root: pathNode.dirname(__filename),
