@@ -1,0 +1,139 @@
+
+//======== MAIN =========
+.hero{
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+
+	&-container{
+		position: relative;
+		padding-top: 12rem;
+		padding-bottom: 8rem;
+	}
+
+	&-content{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		gap: 1.5rem;
+		position: relative;
+		max-width: 620px;
+		z-index: 2;
+	}
+
+	&-subtitle{
+		max-width: 400px;
+		font-size: 1.125rem;
+	}
+
+	@include media-breakpoint-down(xl) {
+		.floating-img{
+			right: -20%;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		&-container{
+			padding: 5rem 0 5rem;
+			
+		}
+
+		&-content{
+			margin: 1.5rem auto;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		&-container{
+			padding-top: 7rem;
+		}
+	}
+}
+
+//======== OFFER =========
+.offer{
+	padding-top: 2rem;
+	
+	@include media-breakpoint-up(lg) {
+		&-cards{
+			.col{
+				&:nth-child(2){
+					margin-top: 3rem;
+				}
+			
+				&:nth-child(3){
+					margin-top: 6rem;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		&-cards{
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+
+//======== APPLY =========
+.apply{
+	padding: 6rem 0;
+
+	.container{
+		position: relative;
+	}
+
+	&-title{
+		width: 100%;
+	}
+
+	&-content{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		position: relative;
+		z-index: 2;
+	}
+
+	&-form{
+		margin-top: 3rem;
+		max-width: 520px;
+		width: 100%;
+	}
+
+	.floating-img{
+		left: -5%;
+		right: auto;
+	}
+
+	@include media-breakpoint-up(lg) {
+		&-form{
+			padding-left: 2rem;
+		}
+	}
+
+	@include media-breakpoint-between(lg, xl) {
+		.floating-img{
+			left: -25%;
+		}
+	}
+
+
+	@include media-breakpoint-down(lg) {
+		padding: 0 0 8rem;
+
+		.floating-img{
+			margin-bottom: 2rem;
+		}
+
+		.apply-form{
+			margin-top: 2rem;
+		}
+
+	}
+}

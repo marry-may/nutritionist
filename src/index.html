@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html', {
+    'title': 'Nutritionist'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="page">
+
+        <!-- SECTION HERO  -->
+        <section class="hero">
+          <div class="container">
+            <div class="row">
+              <div class="col hero-container">
+
+                <div class="hero-img floating-img">
+                  <img src="images/hero-img-1.png" alt="" class="floating-img-1">
+
+                  <div class="bubble bubble-1"></div>
+                  <div class="bubble bubble-2"></div>
+                  <div class="bubble bubble-3"></div>
+                </div>
+
+                <div class="hero-content">
+                  <h1 class="h1">
+                    Looking for nutritional support to preserve your body from aging?
+                  </h1>
+
+                  <div class="hero-subtitle">
+                    <p>Our nutritionists can help you adapt your diet thanks to a personalized program</p>
+                  </div>
+
+                  <button type="button" class="btn btn-primary">
+                    Get nutrition consultation
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+        <!-- / SECTION HERO  -->
+
+        <!-- SECTION OFFER  -->
+        <section class="offer">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 offer-cards">
+
+              <!-- card -->
+              <div class="col">
+
+                <div class="card">
+                  <img src="images/icon-offer-1.svg" alt="" class="card-icon">
+                  <h3 class="h4 card-title">
+                    Personalised Health Assessment
+                  </h3>
+                  <p class="card-description">
+                    Prevent health problems even before they occur
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- card -->
+              <div class="col">
+
+                <div class="card">
+                  <img src="images/icon-offer-2.svg" alt="" class="card-icon">
+                  <h3 class="h4 card-title">
+                    Create an action plan to achieve the health goals
+                  </h3>
+                  <p class="card-description">
+                    Customized nutrition plan, health tips and recipes
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- card -->
+              <div class="col">
+
+                <div class="card">
+                  <img src="images/icon-offer-3.svg" alt="" class="card-icon">
+                  <h3 class="h4 card-title">
+                    Constant monitoring and support
+                  </h3>
+                  <p class="card-description">
+                    To help you move closer to your desired goal
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- / SECTION OFFER  -->
+
+        <!-- SECTION APPLY -->
+        <section class="apply">
+          <div class="container">
+            <div class="floating-img">
+              <img src="images/apply-img-1.png" alt="" class="floating-img-1">
+
+              <div class="bubble bubble-1"></div>
+              <div class="bubble bubble-2"></div>
+              <div class="bubble bubble-3"></div>
+            </div>
+
+            <div class="row">
+              <div class="col col-xl-6 offset-xl-6 col-lg-8 offset-lg-4">
+
+                <div class="apply-content">
+                  <h2 class="h2 apply-title">
+                    Start your journey to better health now and book an appointment today!
+                  </h2>
+    
+                  <div class="apply-form">
+    
+                    <form class="form">
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                      </div>
+    
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="tel" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="email" placeholder="+1 234 567 890">
+                      </div>
+                      
+                      <button type="submit" class="btn btn-primary">
+                        Get nutrition consultation
+                      </button>
+                    </form>
+                  
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+
+            
+
+          </div>
+        </section>
+        <!-- / SECTION APPLY -->
+
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    @@include('html/script.html', {})
+  </body>
+</html> 

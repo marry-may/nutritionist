@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+@import 'config/fonts';
+
+// @import 'config/reset';
+
+@import 'config/variables';
+
+
+// Bootstrap castomization
+@import 'config/custom';
+
+// Base Styles
+@import 'config/common';
+
+
+// Components
+@import 'layout/header';
+@import 'layout/footer';
+
+
+// Pages
+@import 'layout/home';

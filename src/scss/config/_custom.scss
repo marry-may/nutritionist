@@ -1,0 +1,64 @@
+
+
+//===== BOOTSTRAP CUSTOMIZATION =====
+
+// Colors
+$primary: $color-primary;
+$body-color: $color-text;
+$headings-color: $color-title;
+
+// GREY
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// Fonts
+$font-family-base: $font-main;
+$font-family-sans-serif: $font-main;
+
+// Heading
+$h1-font-size: 3.25rem;
+$h2-font-size: 3rem;
+$headings-font-family: $font-main;
+$headings-font-weight: 700;
+$headings-margin-bottom: 0;
+
+// Border Radius
+$border-radius: 1rem;
+$border-radius-sm: .75rem;
+
+
+// Buttons & Inputs
+$input-btn-padding-y: 1rem;
+$input-btn-padding-x: 2rem;
+$input-btn-font-size: 1.125rem;
+
+
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      1rem !default;
+
+
+$input-placeholder-color: $gray-500;
+
+// Navbar
+$navbar-padding-y: 2rem;
+
+// Card
+$card-border-radius: .25rem;
+$card-border-color: rgba($color-text, .15);
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+
