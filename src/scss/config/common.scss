@@ -99,15 +99,18 @@ p{
 	position: absolute;
 	width: 700px;
 	max-width: 100%;
-	max-height: 90vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	top: 15%;
+	top: 5%;
 	bottom: 0;
 	right: -5%;
 	left: auto;
 	z-index: 0;
+
+	picture{
+		height: 100%;
+	}
 
 	&-1{
 		max-width: 100%;
@@ -132,7 +135,7 @@ p{
 	width: 2rem;
 	height: 2rem;
 	border-radius: 100%;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), #A1D5B7;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), #B8E7CC;
 
 	animation: float 8s linear infinite;
 	
@@ -157,6 +160,33 @@ p{
 		bottom: 12%;
 		left: 20%;
 		animation-delay: 1s;
+	}
+
+	&-4{
+		background: $color-secondary;
+		scale: .9;
+		top: 18%;
+		right: 15%;
+		animation-delay: 1s;
+	}	
+
+	&-5{
+		background: $color-secondary;
+		scale: .6;
+		bottom: 20%;
+		left: 14%;
+		animation-direction: reverse;
+		animation-delay: 2s;
+		opacity: .3;
+	}
+
+	&-6{
+		background: $color-secondary;
+		scale: .8;
+		top: 10%;
+		left: 26%;
+		animation-delay: 1s;
+		opacity: .5;
 	}	
 
 

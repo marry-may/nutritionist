@@ -14,7 +14,11 @@
   gap: 1.5rem;
 }
 
-@include media-breakpoint-down(sm) {
+.nav-link{
+  color: $color-text;
+}
+
+@include media-breakpoint-down(lg) {
   .navbar{
     --bs-navbar-padding-y: 1rem;
     background-color: $color-white;
